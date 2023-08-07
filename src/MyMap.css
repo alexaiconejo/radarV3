@@ -1,0 +1,58 @@
+/*---HEADER---*/
+
+header{
+    width: 100%;
+display: grid;
+grid-template-columns: 1fr 4fr 1fr;
+position: fixed;
+z-index: 1000;
+
+
+#imgLogo{
+width: 300px;
+}
+
+
+}
+
+#menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.leaflet-container{
+    background-color:aliceblue ;
+    background-image: url('./fondo2.gif') ;
+    background-size: cover;
+    opacity: 1 
+
+
+
+};
+
+
+
+video{
+    width: 100%;
+    
+}
+
+.popup-fixed {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    display: none;
+  }
+  
+  .popup-fixed h3 {
+    margin: 0;
+    padding: 0;
+  }
+  

@@ -1,0 +1,86 @@
+@font-face {
+    font-family: luxora;
+    src: url('../assets/fonts/LuxoraGrotesk-Regular.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
+  }
+
+
+h1, h2, h5, h3, h4 {
+    color: black;
+    font-family: luxora }
+h3 {
+    color: black;
+    font-size: 15px;
+}
+
+h1, h2{
+    text-align: center;
+}
+
+h1{
+    font-size: 35px;
+}
+
+h2{
+    font-size: 15px;
+}
+
+h5{
+    font-size: 10px;
+}
+
+p{
+    color: black;
+    font-family: luxora;
+    font-size: 12px;
+}
+
+#reportaForm {background-color: #eaeaea;
+    margin: 0;
+  padding: px;
+  width: 100vw;
+  padding-top: 80px;
+ }
+
+form
+ {background-color: white;
+    margin: 30px;
+    margin-top: 45px;
+  padding: 20px;
+  border-radius: 15px 50px;
+  box-shadow: -9px -9px 16px WHITE, 9px 9px 16px #c9c9c9;
+
+ 
+
+}
+
+#formHeader{
+    padding: 0px 100px;
+    justify-content: center;
+    }
+
+
+
+
+.FormInput {background-color: white;
+  padding: 5px;
+  padding-left: 25px;
+  width: 400px;
+  border: 1px solid #eaeaea;
+  border-radius: 15px;
+  height: 5vh;
+  box-shadow: -9px -9px 16px WHITE, 9px 9px 16px #c9c9c9;
+
+}
+
+fieldset {color: black;
+    background-color: white;
+    padding: 5px;
+    border: 0px solid black;
+}
+
+fieldset > input[type='radio']{
+    border-color: black;
+}
+

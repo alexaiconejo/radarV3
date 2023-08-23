@@ -9,7 +9,7 @@ body{
   width: 720px;
   height: 720px;
   position: 100%;
-  background-size: 100%;
+  background-size: 100vw;
   position: absolute;
   
   margin-left: -100% / 2;

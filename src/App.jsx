@@ -12,6 +12,11 @@ import Navbar from './components/navbar.jsx';
 import './App.css';
 import casosData from "../public/data/casos.js";
 import mystyle from './mystyle.json';
+import Main2 from './components/main2.jsx'; // Cambia la ruta a tu formulario
+import Filtros from './components/filtros.jsx'; // Cambia la ruta a tu formulario
+
+import Reporta from './components/reporta.jsx'
+
 
 //limites geograficos
 
@@ -28,7 +33,7 @@ const argentinaBounds = {
 const style = {
   country: {
     fillColor: "#d8d7fa",
-    fillOpacity: 0.6,
+    fillOpacity: 0,
     color: "black",
     weight: 0.2,
   }, departamentos: {
@@ -78,14 +83,19 @@ function App(urls) {
       minZoom: 1,  // Nivel mínimo de zoom permitido
       maxZoom: 10, // Nivel máximo de zoom permitido
     }, style: {
-      width: "100%",
+      width: "100vw",
       height: " calc(100vh)"
     }, mapStyle: mystyle
   }
 
   return (
+
     <div className="App">
-      <Navbar id= "header" ></Navbar>
+
+      <Navbar id= "header" ></Navbar>      
+      <Filtros/>
+
+
       <MapGL id= "mapa" mapLib={maplibregl} {...mapProps}
              onHover={handleHover} // Asignar la función handleProvinciasHover al evento onHover
              onLeave={handleLeave} // Asignar la función handleProvinciasLeave al evento onLeave
@@ -104,6 +114,11 @@ function App(urls) {
 
         <NavigationControl position="bottom-right" />
       </MapGL>
+
+      <Main2/>
+      <Reporta/>
+
+
       {popupInfo && <Popup {...popupInfo} />}
     </div>
   );

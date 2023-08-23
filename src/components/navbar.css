@@ -2,9 +2,9 @@
   position: fixed;
 top: 0;
 left: 0;
-width: 100%;
-z-index: 999;
-  height: 80px;
+width: 100vw;
+z-index: 2000;
+  height: 10vh;
   background-color: #ffffff;
   color: #00425A;
   display: grid;
@@ -19,7 +19,7 @@ z-index: 999;
  }
 
 #menuImg{
-  width: 132px;
+  width: 100px;
 }
 
 
@@ -47,7 +47,7 @@ align-items: center}
  }
 
  #logoImg {
-width: 106px;
+width: 80px;
  }
 
 #logo{

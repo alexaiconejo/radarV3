@@ -2,7 +2,7 @@ import React from 'react';
 import './main2.css'
 
 
-export default function main2(){
+export default function Main2(){
 
 
 return(

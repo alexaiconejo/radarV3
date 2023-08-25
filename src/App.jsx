@@ -5,19 +5,18 @@ import "maplibre-gl/dist/maplibre-gl.css";
 import { ProvSource, DepsSource, BsAsSource } from "./components/Sources.jsx";
 import { Markers } from "./components/Markers.jsx";
 import Popup from "./components/Popup.jsx";
-import Navbar from "./components/navbar.jsx";
 import "./App.css";
 import mystyle from "./mystyle.json";
 import { fecthData } from "./services/fetchs.js";
 import moment from "moment/moment.js";
 import { Slider } from "@mui/material";
-import { provincias, departamentos, departamentosBsAs} from './constants/mapsData/index.js'
-
-import Main2 from './components/main2.jsx'; // Cambia la ruta a tu formulario
-import Filtros from './components/filtros.jsx'; // Cambia la ruta a tu formulario
-import Analisis from './components/analisis.jsx'
-
-import Reporta from './components/reporta.jsx'
+import { provincias, departamentos, departamentosBsAs } from './constants/mapsData/index.js'
+import Router from "./components/Router.jsx";
+import Navbar from "./components/Navbar.jsx";
+import Filtros from "./components/filtros.jsx";
+import Main2 from "./components/main2.jsx";
+import Analisis from "./components/analisis.jsx";
+import Reporta from './pages/reporta.jsx'
 
 //estilos/////////////////////7
 
@@ -146,7 +145,10 @@ function App(urls) {
 
   return (
     <div className="App">
-      <Navbar id="header"></Navbar>
+      <Router />
+
+
+
       <Filtros></Filtros>
       <MapGL
         id="mapa"
@@ -190,8 +192,8 @@ function App(urls) {
       <Main2>
 
       </Main2>
-    <Analisis></Analisis>
-    <Reporta></Reporta>
+      <Analisis></Analisis>
+      <Reporta></Reporta>
     </div>
   );
 }

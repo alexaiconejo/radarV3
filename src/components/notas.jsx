@@ -1,7 +1,7 @@
 import React from 'react';
 import './notas.css';
 
-export default function notas(){
+export default function Notas(){
     return (
      <div >
 

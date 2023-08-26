@@ -10,12 +10,15 @@ import mystyle from "./mystyle.json";
 import { fecthData } from "./services/fetchs.js";
 import moment from "moment/moment.js";
 import { Slider } from "@mui/material";
-import { provincias, departamentos, departamentosBsAs } from './constants/mapsData/index.js'
-import Routes from "./components/Routes.jsx";
+import { provincias, departamentos, departamentosBsAs } from './constants/mapsData/index.js';
 import Filtros from "./components/filtros.jsx";
 import Main2 from "./components/main2.jsx";
 import Analisis from "./components/analisis.jsx";
-import Reporta from './pages/reporta.jsx'
+import Reporta from './components/reporta.jsx';
+import Listado from './components/listado.jsx';
+import Notas from './components/notas.jsx';
+import Conecta from './components/conecta.jsx';
+
 import { Route, useLocation } from "react-router-dom";
 
 //estilos/////////////////////7
@@ -60,9 +63,11 @@ function App(urls) {
   const location = useLocation();
 
   // Verifica si la ubicación actual coincide con una de las rutas.
-  const isHomePage = location.pathname === "/home";
+  const isHomePage = location.pathname === "/mapa";
   const isConectaPage = location.pathname === "/conecta";
   const isReportaPage = location.pathname === "/reporta";
+  const isNotasPage = location.pathname === "/notas";
+  const isListadoPage = location.pathname === "/listado";
 
 
 
@@ -158,10 +163,11 @@ function App(urls) {
   return (
 
     <>
+
+
+
       {isHomePage && (
         <div>
-          {/* Contenido específico de la página Home */}
-
           <div className="App">
 
 
@@ -212,10 +218,8 @@ function App(urls) {
             <Analisis></Analisis>
 
 
-          </div >
-
-        </div>
-    )}
+          </div >        </div>
+      )}
 
       {isReportaPage && (
         <div>
@@ -223,12 +227,30 @@ function App(urls) {
           <Reporta></Reporta>
         </div>
       )}
+      {isConectaPage && (
+        <div>
+          {/* Contenido específico de la página Conecta */}
+          <Conecta></Conecta>
+        </div>
+      )}
 
-      
+
+      {isNotasPage && (
+        <div>
+          {/* Contenido específico de la página Conecta */}
+          <Notas></Notas>
+        </div>
+      )}
+      {isListadoPage && (
+        <div>
+          {/* Contenido específico de la página Conecta */}
+          <Listado></Listado>
+        </div>
+      )}
 
     </>
 
-  
+
   );
 }
 

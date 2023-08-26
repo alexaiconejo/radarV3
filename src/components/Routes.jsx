@@ -4,7 +4,7 @@ import {
   Route,
   Link,
 } from "react-router-dom";
-import ReportaForm from "../pages/reporta";
+import ReportaForm from "./reporta";
 import Main2 from "./main2";
 import Navbar from "./Navbar";
 import Conecta from "./conecta";

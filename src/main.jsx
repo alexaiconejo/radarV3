@@ -10,9 +10,12 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <Navbar /> {/* Navbar siempre se muestra */}
    <App></App>
     <Routes>
-      <Route path="/home" element={App} /> {/* Página Home */}
+      <Route path="/mapa" element={App} /> {/* Página mapa */}
       <Route path="/conecta" element={App} /> {/* Página Conecta */}
       <Route path="/reporta" element={App} /> {/* Página Reporta */}
+      <Route path="/notas" element={App} /> {/* Página Reporta */}
+      <Route path="/listado" element={App} /> {/* Página Reporta */}
+
     </Routes>
   </Router>,
 

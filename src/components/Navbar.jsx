@@ -9,20 +9,29 @@ import {
 export default function Navbar() {
   return (
     <div className="heading">
-      <div id="logo">
-        <img id="logoImg" src="../src/assets/logo.png" alt="" />
-      </div>
+      
       <div id="menu">
         <div id="menuPCBox">
           <ul id="menuPC">
           <li>
               {/* Enlace a la ruta MAIN2 */}
-              <Link to="/home">Home</Link>
+              <Link to="/mapa"><div id="logo">
+        <img id="logoImg" src="../src/assets/logo.png" alt="" />
+      </div></Link>
             </li>
             <li>
               {/* Enlace a la ruta REPORTA */}
               <Link to="/reporta">Reporta</Link>
             </li>
+            <li>
+              {/* Enlace a la ruta REPORTA */}
+              <Link to="/notas">Notas</Link>
+            </li>
+            <li>
+              {/* Enlace a la ruta REPORTA */}
+              <Link to="/conecta">Conecta</Link>
+            </li>
+            
             
           </ul>
         </div>

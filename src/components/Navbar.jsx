@@ -15,14 +15,15 @@ export default function Navbar() {
       <div id="menu">
         <div id="menuPCBox">
           <ul id="menuPC">
+          <li>
+              {/* Enlace a la ruta MAIN2 */}
+              <Link to="/home">Home</Link>
+            </li>
             <li>
               {/* Enlace a la ruta REPORTA */}
               <Link to="/reporta">Reporta</Link>
             </li>
-            <li>
-              {/* Enlace a la ruta MAIN2 */}
-              <Link to="/home">Home</Link>
-            </li>
+            
           </ul>
         </div>
       </div>

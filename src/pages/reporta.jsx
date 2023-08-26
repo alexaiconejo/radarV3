@@ -2,7 +2,7 @@ import React from 'react';
 import './reporta.css'
 
 
-export default function ReportaForm(){
+export default function Reporta(){
 
 
 return(

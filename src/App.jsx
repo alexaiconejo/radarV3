@@ -11,12 +11,12 @@ import { fecthData } from "./services/fetchs.js";
 import moment from "moment/moment.js";
 import { Slider } from "@mui/material";
 import { provincias, departamentos, departamentosBsAs } from './constants/mapsData/index.js'
-import Router from "./components/Router.jsx";
-import Navbar from "./components/Navbar.jsx";
+import Routes from "./components/Routes.jsx";
 import Filtros from "./components/filtros.jsx";
 import Main2 from "./components/main2.jsx";
 import Analisis from "./components/analisis.jsx";
 import Reporta from './pages/reporta.jsx'
+import { Route, useLocation } from "react-router-dom";
 
 //estilos/////////////////////7
 
@@ -56,6 +56,18 @@ const style = {
 };
 
 function App(urls) {
+
+  const location = useLocation();
+
+  // Verifica si la ubicación actual coincide con una de las rutas.
+  const isHomePage = location.pathname === "/home";
+  const isConectaPage = location.pathname === "/conecta";
+  const isReportaPage = location.pathname === "/reporta";
+
+
+
+
+
   const [hoveredFeatureId, setHoveredFeatureId] = useState(null);
   const [hoveredMarkerId, setHoveredMarkerId] = useState(null);
   const [popupInfo, setPopupInfo] = useState(null);
@@ -144,57 +156,79 @@ function App(urls) {
   }, [data]);
 
   return (
-    <div className="App">
-      <Router />
+
+    <>
+      {isHomePage && (
+        <div>
+          {/* Contenido específico de la página Home */}
+
+          <div className="App">
 
 
 
-      <Filtros></Filtros>
-      <MapGL
-        id="mapa"
-        mapLib={maplibregl}
-        {...mapProps}
-        onHover={handleHover} // Asignar la función handleProvinciasHover al evento onHover
-        onLeave={handleLeave} // Asignar la función handleProvinciasLeave al evento onLeave
-      >
-        {/* Capa interactiva para provincias */}
+            <Filtros></Filtros>
+            <MapGL
+              id="mapa"
+              mapLib={maplibregl}
+              {...mapProps}
+              onHover={handleHover} // Asignar la función handleProvinciasHover al evento onHover
+              onLeave={handleLeave} // Asignar la función handleProvinciasLeave al evento onLeave
+            >
+              {/* Capa interactiva para provincias */}
 
-        <ProvSource data={provincias} selected={hoveredFeatureId} />
-        <DepsSource data={departamentos} style={style.departamentos} />
-        <BsAsSource data={departamentosBsAs} style={style.country} />
+              <ProvSource data={provincias} selected={hoveredFeatureId} />
+              <DepsSource data={departamentos} style={style.departamentos} />
+              <BsAsSource data={departamentosBsAs} style={style.country} />
 
-        {data && (
-          <Markers
-            events={filteredData}
-            setPopupInfo={setPopupInfo}
-            setMarker={setHoveredMarkerId}
-            selected={hoveredMarkerId}
-          />
-        )}
-        <NavigationControl position="bottom-right" />
-      </MapGL>
+              {data && (
+                <Markers
+                  events={filteredData}
+                  setPopupInfo={setPopupInfo}
+                  setMarker={setHoveredMarkerId}
+                  selected={hoveredMarkerId}
+                />
+              )}
+              <NavigationControl position="bottom-right" />
+            </MapGL>
 
-      <div className="slider-container">
-        <Slider
-          max={months}
-          valueLabelDisplay="auto"
-          value={value}
-          step={1}
-          getAriaValueText={valueLabelFormat}
-          valueLabelFormat={valueLabelFormat}
-          onChange={handleChange}
-          aria-labelledby="non-linear-slider"
-        />
-      </div>
+            <div className="slider-container">
+              <Slider
+                max={months}
+                valueLabelDisplay="auto"
+                value={value}
+                step={1}
+                getAriaValueText={valueLabelFormat}
+                valueLabelFormat={valueLabelFormat}
+                onChange={handleChange}
+                aria-labelledby="non-linear-slider"
+              />
+            </div>
 
-      {popupInfo && <Popup {...popupInfo} />}
+            {popupInfo && <Popup {...popupInfo} />}
 
-      <Main2>
+            <Main2>
 
-      </Main2>
-      <Analisis></Analisis>
-      <Reporta></Reporta>
-    </div>
+            </Main2>
+            <Analisis></Analisis>
+
+
+          </div >
+
+        </div>
+    )}
+
+      {isReportaPage && (
+        <div>
+          {/* Contenido específico de la página Conecta */}
+          <Reporta></Reporta>
+        </div>
+      )}
+
+      
+
+    </>
+
+  
   );
 }
 

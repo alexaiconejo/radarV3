@@ -21,7 +21,7 @@ export default function Navbar() {
             </li>
             <li>
               {/* Enlace a la ruta MAIN2 */}
-              <Link to="/radarV3/main2">Main2</Link>
+              <Link to="/home">Home</Link>
             </li>
           </ul>
         </div>
@@ -30,5 +30,6 @@ export default function Navbar() {
         <img id="menuImg" src="../src/assets/menu.png" alt="" />
       </div>
     </div>
+    
   );
 }

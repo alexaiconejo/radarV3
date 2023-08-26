@@ -8,6 +8,7 @@
     height: 10vh;
 }
 
+<<<<<<< HEAD
 #filtrosBox{
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -19,36 +20,99 @@
     padding: 5px;
     height: 78vh;
     padding-left: 15px;
+=======
+
+#filtrosBox{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+#plegable{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
+#cerrarFiltros{
+    visibility: hidden;
+}
+
+
+#boxes{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 3px;
+    height: 55vh;
+    padding-left: 5px;
+>>>>>>> preProdu
     z-index: 1000;
 
 }
 
+<<<<<<< HEAD
 #filtrosBox2{
     height: 10vh;
     display: grid;
     grid-template-columns: 8fr 1fr;
 }
+=======
+>>>>>>> preProdu
 
 #display{
     background-color: white;
     color: black;
     border-radius: 20px;
+<<<<<<< HEAD
     padding: 10px;
         box-shadow: -2px -2px 16px WHITE, 2px 2px 16px #c9c9c9;
 
 }
 
 #filtroTipo{
+=======
+    
+        box-shadow: -2px -2px 16px WHITE, 2px 2px 16px #c9c9c9;
+        text-align: left;
+        padding-left: 5vw;
+
+
+}
+
+#cantCasos{
+    font-size: 45px;
+    text-align: left;
+}
+
+#filtroTipo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+>>>>>>> preProdu
     margin-top: 15px;
     background-color: white;
     color: black;
     border-radius: 20px;
     padding: 10px;
     box-shadow: -2px -2px 16px WHITE, 2px 2px 16px #c9c9c9;
+<<<<<<< HEAD
+=======
+    justify-content: center;
+    text-align: center;
+>>>>>>> preProdu
 
 
 }
 
+<<<<<<< HEAD
+=======
+.tipoClass{
+    font-size: 10px;
+}
+
+
+#gap2{
+    height: 25vh;
+}
+
+
+>>>>>>> preProdu
 #rangeSlider{
 
     background-color: white;
@@ -56,7 +120,11 @@
     border-radius: 20px;
     padding: 10px;
     height: 5vh;
+<<<<<<< HEAD
     margin-left: 15px;
+=======
+    /*margin-left: 15px;*/
+>>>>>>> preProdu
     box-shadow: -2px -2px 16px WHITE, 2px 2px 16px #c9c9c9;
     z-index: 1000;
 
@@ -64,12 +132,21 @@
 
 .tipos{
     display: grid;
+<<<<<<< HEAD
     grid-template-columns: 1fr 3fr 1fr;
     padding: 7px 5px;
 }
 
 .tipo1Icon{
 background-color: red;
+=======
+    grid-template-columns: 1fr;
+    padding: 7px 5px;
+justify-items: center;}
+
+.tipo1Icon{
+background-color: yellow;
+>>>>>>> preProdu
 width: 23px;
 height: 23px;
 border-radius: 5px;
@@ -83,7 +160,11 @@ border-radius: 5px;
 
     }
     .tipo3Icon{
+<<<<<<< HEAD
         background-color: yellow;
+=======
+        background-color: red;
+>>>>>>> preProdu
         width: 23px;
         height: 23px;
         border-radius: 5px;
@@ -92,4 +173,81 @@ border-radius: 5px;
         #botonBajar{
             z-index: 1000;
 
+<<<<<<< HEAD
         }
+=======
+        }
+
+        .componente{
+            background-color: white;
+            color: black;
+            border-radius: 20px;
+            padding: 10px;
+                box-shadow: -2px -2px 16px WHITE, 2px 2px 16px #c9c9c9;
+        margin-top: 15px;
+        }
+
+        #simple-select{
+            width: 20vw;
+        }
+
+
+
+        
+/*== Responsive==*/
+
+/*== tablet==*/
+
+@media (min-width: 768px){
+
+   
+    #filtrosBox{
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+    }
+
+
+    #filtros{
+        height: 90vh;
+    }
+    .tipoClass{
+        font-size: 10px;
+    }
+
+    #gap{
+        height: 12vh;
+    }
+
+
+    
+#boxes{
+    padding: 5px;
+    height: 50vh;
+    padding-left: 15px;
+}
+
+#simple-select{
+    width: 20vw;
+};
+
+
+
+
+}
+
+
+/*  PC  */
+
+@media (min-width: 1200px){
+
+    
+#filtrosBox{
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+}
+
+#simple-select{
+    width: 10vw;
+};
+}
+>>>>>>> preProdu

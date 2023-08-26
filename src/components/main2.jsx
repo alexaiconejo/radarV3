@@ -32,6 +32,7 @@ return(
         <div id='bloqueD'></div>
       </div>
 
+<<<<<<< HEAD
       <div id='franja2'>
 
       <div id='notasMain'>
@@ -42,11 +43,24 @@ return(
       <button><a href="">ver</a></button>
 
       </div>
+=======
+     <div id='franja2'>
+
+        <div id='notasMain'>
+
+          <h1 class='titulo'>Notas</h1>
+
+          <h4 class='bajada'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, distinctio tempora! Esse perspiciatis eius praesentium?</h4>
+          <button><a href="">ver</a></button>
+
+       </div>
+>>>>>>> preProdu
 
 
       <div id='botoneraMain'>
 
         <div id='contactoMain'>
+<<<<<<< HEAD
             <h2>Conectá</h2>
             <p>Conocé más sobre RADAR</p>
             <button><a href="">Ir</a></button>
@@ -63,14 +77,32 @@ return(
 
 
 
+=======
+            <h2 id='conectaTitle'>Conectá</h2>
+            <p id='conectaText'>Conocé más sobre RADAR</p>
+            <button><a href="">Ir</a></button>
+        </div>
+        <div id='listadoMain'>
+          <h3 id='listadoText'>Listado de todos los casos</h3>
+          <button><a href="">Ir</a></button>
+        </div>
+        <div id='analisisMain'>
+          <h3 id='analisisText'>Analisis y estadisticas</h3>
+          <button><a href="">1</a></button>
+        </div>
+      </div>
+>>>>>>> preProdu
 
 
      </div>
 
 
+<<<<<<< HEAD
       </div>
 
 
+=======
+>>>>>>> preProdu
 
 
     </div>

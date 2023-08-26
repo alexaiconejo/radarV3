@@ -1,5 +1,6 @@
 
 
+<<<<<<< HEAD
 
 
 
@@ -7,15 +8,27 @@
 
 #main2{
     display: grid;
+=======
+#main2{
+    display: grid;
+    grid-template-columns: 1fr;
+>>>>>>> preProdu
     width: 100vw;
     height: 90vh;
 
 }
 
 #franja1{
+<<<<<<< HEAD
     display: grid;
     grid-template-columns: 8fr 1fr;
     column-gap: 20px;
+=======
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 8fr 1fr;
+   column-gap: 20px;
+>>>>>>> preProdu
     background-color: #EAEAEA;
     margin-top: 0px;
     padding: 20px;
@@ -45,7 +58,11 @@
 #botonMain2{
     align-self: center;
     margin-bottom: 0px;
+<<<<<<< HEAD
     width: 100%;
+=======
+    /*width: 100%;*/
+>>>>>>> preProdu
     height: 100%;
     box-shadow: -9px -9px 16px WHITE, 9px 9px 16px #c9c9c9;
 
@@ -53,6 +70,11 @@
 
 
 #separadorMain{
+<<<<<<< HEAD
+=======
+    width: 100vw;
+
+>>>>>>> preProdu
     height: 3vh;
     background-color:white;
     display: grid;
@@ -78,6 +100,11 @@
 }
 
 #franja2{
+<<<<<<< HEAD
+=======
+    width: 100vw;
+
+>>>>>>> preProdu
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: #EAEAEA;
@@ -92,6 +119,10 @@
 
 
 #notasMain{
+<<<<<<< HEAD
+=======
+  /*  width: 50vw;*/
+>>>>>>> preProdu
     background-color: white;
     color: black;
     border-radius: 20px;
@@ -104,9 +135,16 @@
 }
 
 #botoneraMain{
+<<<<<<< HEAD
 display: grid;
 grid-template-columns: 1fr;
 gap: 10px;
+=======
+ /*  width: 50vw;*/
+display: grid;
+grid-template-columns: 1fr;
+/*gap: 10px;*/
+>>>>>>> preProdu
 }
 
 #contactoMain{
@@ -120,6 +158,27 @@ gap: 10px;
 
 }
 
+<<<<<<< HEAD
+=======
+#conectaTitle{
+    color: white;
+}
+
+#conectaText{
+    color: white;
+}
+
+#listadoText{
+    color: white;
+}
+
+#analisisText{
+    color: white;
+}
+
+
+
+>>>>>>> preProdu
 #listadoMain{
     display: grid;
     grid-template-columns: 4fr 1fr;
@@ -149,4 +208,35 @@ gap: 10px;
 .bajada{
     padding: 10px 30px;
 
+<<<<<<< HEAD
+=======
+}
+
+
+
+/*== Responsive==*/
+
+/*== tablet==*/
+
+@media (min-width: 768px){
+
+
+    #franja1{
+        display: grid;
+        grid-template-columns: 8fr 1fr;
+       column-gap: 20px;
+     
+        padding: 20px;
+        height: 30vh;
+    }
+
+}
+
+
+/*  PC  */
+
+@media (min-width: 1200px){
+
+  
+>>>>>>> preProdu
 }

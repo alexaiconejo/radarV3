@@ -4,6 +4,17 @@ import './reporta.css'
 
 export default function reportaForm(){
 
+<<<<<<< HEAD
+=======
+function Submit(e){
+  const formEle = document.querySelector("#formSheet")
+  e.preventDefault
+  console.log("submitted")
+  const formData = new FormData(formEle)
+fetch("https://script.google.com/macros/s/AKfycbySxucaKUPO4gM1WPoknylJuhqL4ElNwvgyDUfzVypgXlTX3u3CtrdBAuwSpB2DQ2O8/exec", {method: "POST", body: formData})
+}
+
+>>>>>>> preProdu
 
 return(
 
@@ -14,6 +25,7 @@ return(
       <div id="form">
 
         <div id='formHeader'>
+<<<<<<< HEAD
         <h1 id='titulo'>Relevamiento nacional de ataques de derechas radicalizadas
 </h1>
         <h4>*este reporte no implica la realización de ningún tipo de denuncia institucional sino un aporte a un relevamiento colaborativo con fines periodísticos. 
@@ -21,24 +33,45 @@ return(
         </div>
 
         <form action="formData.php" method="post">
+=======
+        <h1 id='tituloForm'>Relevamiento nacional de ataques de derechas radicalizadas
+</h1>
+        <h4 id='bajadaForm'>*este reporte no implica la realización de ningún tipo de denuncia institucional sino un aporte a un relevamiento colaborativo con fines periodísticos. 
+        <br /> **no publicaremos ninguna información sin tu autorización </h4>
+        </div>
+
+        <form id='formSheet' onSubmit={(e)=>Submit(e)}>
+>>>>>>> preProdu
           <div class='FormInput'>
             <label htmlFor="email"></label>
             <h3>Email</h3>
 
             <br />
+<<<<<<< HEAD
             <input className="formInput" type="email" name="mail" id="email" required placeholder="Escribe tu email" />
+=======
+            <input className="formInput" type="email" name="Mail" id="mail" required placeholder="Escribe tu email" />
+>>>>>>> preProdu
           </div>
           <br />
 
           <div>
+<<<<<<< HEAD
            <label class='FormInput' htmlFor="titulo">
+=======
+           <label class='formInput' htmlFor="titulo">
+>>>>>>> preProdu
               <h3>¿Qué pasó?</h3>
               <p>una descripción lo más detallada del hecho</p>
            </label>
             <input
              className="formInput" 
               type="text"
+<<<<<<< HEAD
               name="tituloHecho"
+=======
+              name="Titulo"
+>>>>>>> preProdu
               id="titulo"
               required
               placeholder="Escribe tu respuesta"
@@ -46,7 +79,11 @@ return(
             />
           </div>
           <br />
+<<<<<<< HEAD
           <div class='FormInput'>
+=======
+          <div class='formInput'>
+>>>>>>> preProdu
             <label htmlFor="fecha">
               <h3>¿Cuándo pasó?</h3>
               <p>si no es posible indicar fecha exacta, incorporar una referencia de tiempo en la descripción del hecho</p>
@@ -60,7 +97,11 @@ return(
     <h3>¿Dónde pasó?</h3>
     <p>Si es posible, insertar enlace de googlemaps o referencia geográfica</p>
   </label>
+<<<<<<< HEAD
   <input  className="formInput"  type="text" name="lugarHecho" id="lugar" placeholder="Escribe aquí" />
+=======
+  <input  className="formInput"  type="text" name="Lugar" id="lugar" placeholder="Escribe aquí" />
+>>>>>>> preProdu
 </div>
 <br />
 <div>
@@ -71,9 +112,14 @@ return(
   <input
     className="formInput" 
      type="text"
+<<<<<<< HEAD
     name="agresorHecho"
     id="agresor"
     value=""
+=======
+    name="Agresor"
+    id="agresor"
+>>>>>>> preProdu
     placeholder="Escribe aquí"
     required
   />
@@ -86,9 +132,14 @@ return(
   <input
    className="formInput" 
     type="text"
+<<<<<<< HEAD
     name="intervencionHecho"
     id="contexto"
     value=""
+=======
+    name="Intervencion"
+    id="intervencion"
+>>>>>>> preProdu
     placeholder="Escribe aquí"
   />
 </div>
@@ -98,7 +149,11 @@ return(
     <p>Fotos, videos o documentos relativos al hecho.</p>
   </label>
   <br />
+<<<<<<< HEAD
   <input  className="formInput"  type="file" name="archivosHecho" id="archivos" multiple />
+=======
+  <input  className="formInput"  type="file" name="Archivos" id="archivos" multiple />
+>>>>>>> preProdu
 </div>
 <div>
   <label htmlFor="comentarios">
@@ -108,9 +163,14 @@ return(
   <input
    className="formInput" 
     type="text"
+<<<<<<< HEAD
     name="comentariosHecho"
     id="observaciones"
     value=""
+=======
+    name="Comentarios"
+    id="observaciones"
+>>>>>>> preProdu
     placeholder="Escribe aquí"
   />
 </div>

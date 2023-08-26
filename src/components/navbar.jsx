@@ -2,6 +2,10 @@ import React from 'react';
 import './navbar.css';
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> preProdu
 export default function Navbar(){
  return (
   <div className="heading">
@@ -13,9 +17,15 @@ export default function Navbar(){
 
 <div id="menuPCBox">
    <ul id="menuPC">
+<<<<<<< HEAD
         <li><a href="">reporta</a></li>
         <li><a href="">notas</a></li>
+=======
+        <li><a href="">informes</a></li>
+>>>>>>> preProdu
         <li><a href="">nosotrxs</a></li>
+        <button id='botonReporta'>reportá</button>
+
     </ul>
 </div>
    
@@ -30,8 +40,9 @@ export default function Navbar(){
  </div>
    
 
-   
+
 
   </div>
+
  );
 }

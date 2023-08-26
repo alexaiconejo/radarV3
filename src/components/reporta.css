@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> preProdu
 @font-face {
     font-family: luxora;
     src: url('../assets/fonts/LuxoraGrotesk-Regular.woff') format('woff');
@@ -11,7 +16,11 @@ h1, h2, h5, h3, h4 {
     font-family: luxora }
 h3 {
     color: black;
+<<<<<<< HEAD
     font-size: 15px;
+=======
+    font-size: 10px;
+>>>>>>> preProdu
 }
 
 h1, h2{
@@ -19,6 +28,7 @@ h1, h2{
 }
 
 h1{
+<<<<<<< HEAD
     font-size: 35px;
 }
 
@@ -28,21 +38,41 @@ h2{
 
 h5{
     font-size: 10px;
+=======
+    font-size: 10px;
+}
+
+h2{
+    font-size: 8px;
+}
+
+h5{
+    font-size: 5px;
+>>>>>>> preProdu
 }
 
 p{
     color: black;
     font-family: luxora;
+<<<<<<< HEAD
     font-size: 12px;
+=======
+    font-size: 5px;
+>>>>>>> preProdu
 }
 
 #reportaForm {background-color: #eaeaea;
     margin: 0;
+<<<<<<< HEAD
   padding: px;
+=======
+  padding: 20px;
+>>>>>>> preProdu
   width: 100vw;
   padding-top: 80px;
  }
 
+<<<<<<< HEAD
 form
  {background-color: white;
     margin: 30px;
@@ -50,12 +80,21 @@ form
   padding: 20px;
   border-radius: 15px 50px;
   box-shadow: -9px -9px 16px WHITE, 9px 9px 16px #c9c9c9;
+=======
+#formSheet
+ {background-color: white;
+    /*margin: 30px;*/
+    margin-top: 45px;
+  padding: 20px;
+  border-radius: 15px 50px;
+>>>>>>> preProdu
 
  
 
 }
 
 #formHeader{
+<<<<<<< HEAD
     padding: 0px 100px;
     justify-content: center;
     }
@@ -71,6 +110,26 @@ form
   border-radius: 15px;
   height: 5vh;
   box-shadow: -9px -9px 16px WHITE, 9px 9px 16px #c9c9c9;
+=======
+    padding: 10px 40px;
+    justify-content: center;
+    }
+
+    #titulo{
+        font-size: 30px;
+    }
+
+
+
+
+.formInput {background-color: white;
+  padding: 5px;
+  padding-left: 25px;
+  width: 70vw;
+  border: 1px solid #eaeaea;
+  border-radius: 15px;
+  height: 5vh;
+>>>>>>> preProdu
 
 }
 
@@ -84,3 +143,87 @@ fieldset > input[type='radio']{
     border-color: black;
 }
 
+<<<<<<< HEAD
+=======
+
+/*== Responsive==*/
+
+/*== tablet==*/
+
+@media (min-width: 768px){
+
+
+    h3 {
+        font-size: 15px;
+    }
+   
+    
+    h1{
+        font-size: 35px;
+    }
+    
+    h2{
+        font-size: 15px;
+    }
+    
+    h5{
+        font-size: 10px;
+    }
+    
+    p{
+        font-size: 12px;
+    }
+    
+    #formHeader{
+        padding: 0px 100px;
+        }
+
+        
+    #tituloForm{
+        font-size: 30px;
+    }
+    #bajadaForm{
+        padding-top: 3vh;
+    }
+
+
+}
+
+
+/*  PC  */
+
+@media (min-width: 1200px){
+
+    #form{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    
+#formHeader{
+    padding: 10px 8vw;
+    padding-top: 20vh;
+    }
+
+    #tituloForm{
+        font-size: 3rem;
+    }
+
+    #bajadaForm{
+        padding-top: 5vh;
+        font-size: 1rem;
+    }
+
+  
+    .formInput {background-color: white;
+        color: black;
+        padding: 5px;
+        padding-left: 25px;
+        width: 30vw;
+        border: 1px solid #eaeaea;
+        border-radius: 15px;
+        height: 5vh;
+      
+      }
+}
+>>>>>>> preProdu

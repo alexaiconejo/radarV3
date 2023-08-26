@@ -1,8 +1,15 @@
 import React from 'react';
+<<<<<<< HEAD
 import './reporta.css'
 
 
 export default function reportaForm(){
+=======
+import './analisis.css'
+
+
+export default function analisis(){
+>>>>>>> preProdu
 
 
 return(

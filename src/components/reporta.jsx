@@ -2,20 +2,13 @@ import React from 'react';
 import './reporta.css'
 
 
-export default function reportaForm(){
-
-function Submit(e){
-  const formEle = document.querySelector("#formSheet")
-  e.preventDefault
-  console.log("submitted")
-  const formData = new FormData(formEle)
-fetch("https://script.google.com/macros/s/AKfycbySxucaKUPO4gM1WPoknylJuhqL4ElNwvgyDUfzVypgXlTX3u3CtrdBAuwSpB2DQ2O8/exec", {method: "POST", body: formData})
-}
+export default function Reporta(){
 
 
 return(
 
- 
+  
+
     <div id="reportaForm">
       
 
@@ -39,6 +32,7 @@ return(
           <br />
 
           <div>
+            
            <label class='formInput' htmlFor="titulo">
               <h3>¿Qué pasó?</h3>
               <p>una descripción lo más detallada del hecho</p>

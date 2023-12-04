@@ -318,7 +318,7 @@ function App(urls) {
               <div id='referenciasFechas'>
               <div> <h6 id='fechaInicio'>2/2020</h6>  </div>
               <div>  </div>
-              <div> <h6 id='fechaCierre'>9/2023</h6>  </div>
+              <div> <h6 id='fechaCierre'>12/2023</h6>  </div>
               </div>
 
 

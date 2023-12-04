@@ -22,7 +22,7 @@ export default function analisis() {
           <h1 id='tituloAnalisis'>RELEVAMIENTO
             2020 - 2023
           </h1>
-          <h4 id='analisisCasos'> 201 CASOS</h4>
+          <h4 id='analisisCasos'> 240 CASOS</h4>
           <h4 id='analisisCasosBajada'>organizados por sus narrativas de odio
 
           </h4>

@@ -201,8 +201,12 @@ function App(urls) {
         }
       });
 
+
+
       const yearsDiff = now.year() - from.year();
       const monthDiff = now.month() - from.month();
+
+      
 
       const totalMonths = yearsDiff * 12 + monthDiff;
       setMonths(totalMonths);

@@ -7,31 +7,20 @@ export default function analisis() {
 
 
   return (
-
-
     <div id="analisis">
 
       <div id='fondoAnalisisImg'> <img src="radarPuntos.png" alt="" /></div>
 
-
       <div id="analisisHeader">
-
         <div id='analisisTituloSec'>
           <h4 id='tituloAnalisisRadar'>REGISTRO DE ATAQUES <br /> DE DERECHAS ARGENTINAS RADICALIZADAS
           </h4>
           <h1 id='tituloAnalisis'>RELEVAMIENTO
-            2020 - 2023
-          </h1>
+            2020 - 2023 </h1>
           <h4 id='analisisCasos'> 240 CASOS</h4>
-          <h4 id='analisisCasosBajada'>organizados por sus narrativas de odio
-
-          </h4>
-
-        </div>
-
-        <div id='analisisImg'>
-        </div>
-
+          <h4 id='analisisCasosBajada'>organizados por sus narrativas de odio </h4>
+       </div>
+       <div id='analisisImg'></div>
       </div>
 
       <div id='analisisDatos'>

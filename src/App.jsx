@@ -348,7 +348,8 @@ function App(urls) {
 
             <Main2 />
        
-              <Analisis/>
+              <Analisis
+              caseCount={filteredData.length}/>
 
               <Footer/>
               

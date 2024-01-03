@@ -14,6 +14,7 @@ import Main2 from "./components/Main2.jsx";
 import Conecta from "./components/conecta.jsx";
 import Notas from "./components/notas.jsx";
 import Reporta from "./components/reporta.jsx";
+import Verificado from "./components/verificado.jsx";
 
 
 import Root from "./routes/Root.jsx";
@@ -29,7 +30,7 @@ const router = createHashRouter([
       { path:"/reporta", element:< Reporta/>, },
       { path:"/notas", element:< Notas/>, },
       { path:"/main2", element:< Main2/>, },
-
+      { path:"/verificado", element:< Verificado/>, },
 
 
     ]

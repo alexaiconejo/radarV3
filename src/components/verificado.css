@@ -1,0 +1,99 @@
+
+
+.verificado{
+
+    width: 100vw;
+    background-color: #2b3bcd;
+    background-image: url(./fondoNosotrxs.jpg);
+    padding: 20vh 5vw;
+    height: 100vh;
+}
+
+
+.verificadoTextContainer{
+
+    width: 80vw;
+    
+}
+
+
+#verificadoText{
+
+    padding-top: 5vh;
+    color: white;
+    font-size: 1rem;
+    text-align: justify;
+    font-size: 0.8rem;
+    padding: 15px;
+
+}
+
+
+.verificadoBotonVolver{
+   
+    text-decoration: none; 
+    cursor: pointer; 
+    background-color:  white;
+    border-color: white;
+    color: white;
+    width: 45vw;
+    border-radius: 25px;
+    margin-top: 5vh;
+
+
+}
+
+
+/*== tablet==*/
+
+@media (min-width: 768px){
+
+    .verificado{
+        width: 100vw;
+        padding: 20vh 15vw;
+        padding-bottom: 6vh;
+        height: 100vh;
+    
+    }
+
+    .verificadoText{
+padding: 0vh 4vw;
+        padding-top: 5vh;
+
+    color: white;
+    font-size: 1.2rem;
+    text-align: justify;
+    font-family: 'MiFuente';
+}
+   
+
+}
+
+@media (min-width: 1200px){
+
+   
+   
+    
+    .verificadoText{
+padding: 0vh 4vw;
+        padding-top: 5vh;
+
+    color: white;
+    font-size: 1.2rem;
+    text-align: justify;
+    font-family: 'MiFuente';
+}
+
+.verificadoBotonVolver{
+   margin-top: 5vh;
+    text-decoration: none; 
+    cursor: pointer; 
+  
+    border-color: white;
+    color: white;
+    width: 10vw;
+    border-radius: 25px;
+
+}
+
+}

@@ -306,27 +306,7 @@ function App(urls) {
               <NavigationControl position="top-right" />
             </MapGL>
 
-            <div className="slider-container">
-              {/* Agrega un botón o elemento para cambiar la visibilidad de Filtros */}
-              <Slider
-                max={months}
-                valueLabelDisplay="auto"
-                value={value}
-                step={1}
-                getAriaValueText={valueLabelFormat}
-                valueLabelFormat={valueLabelFormat}
-                onChange={handleChange}
-                aria-labelledby="non-linear-slider"
-              />
-
-              <div id='referenciasFechas'>
-              <div> <h6 id='fechaInicio'>2/2020</h6>  </div>
-              <div>  </div>
-              <div> <h6 id='fechaCierre'>12/2023</h6>  </div>
-              </div>
-
-
-            </div>
+           
 
             <ScrollLink id='toMain2Container'
               to="Main2" // ID del elemento de destino (Main2)
